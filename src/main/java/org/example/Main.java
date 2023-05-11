@@ -29,7 +29,7 @@ class MongoDBClientConnectionExample {
                 // Send a ping to confirm a successful connection
                 MongoDatabase database = mongoClient.getDatabase("admin");
                 database.runCommand(new Document("ping", 1));
-                System.out.println("Pinged! Well seems it is working!");
+                System.out.println("Pinged! Well done! It seems to work, but i'm not sure why.");
             } catch (MongoException e) {
                 e.printStackTrace();
             }
